@@ -9,9 +9,8 @@ import plotly.figure_factory as ff
 import numpy as np
 from helper import medal_tally
 
-
-df=pd.read_csv(r"C:\Users\Lenovo\Downloads\athlete_events.csv\athlete_events.csv")
-region_df=pd.read_csv(r"C:\Users\Lenovo\Downloads\athlete_events.csv\noc_regions.csv")
+df = pd.read_csv("datas/athlete_events.csv")
+region_df = pd.read_csv("datas/noc_regions.csv")
 
 
 df=preprocessor.preprocess(df,region_df)
